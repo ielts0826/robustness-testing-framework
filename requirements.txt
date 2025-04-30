@@ -1,0 +1,9 @@
+torch
+torchvision
+pytest
+Pillow
+pyyaml
+matplotlib
+pytest-html
+numpy
+setuptools 
