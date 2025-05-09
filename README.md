@@ -10,7 +10,7 @@
 这个项目提供了一个自动化测试框架，用于评估预训练图像分类模型的鲁棒性、确定性和合理性。该框架主要使用PyTorch和pytest实现，可以帮助开发者和研究人员验证模型在各种情况下的稳定性和可靠性。
 
 <div align="center">
-  <img src="results/sample_prediction.png" alt="示例预测结果" width="600">
+  <img src="https://i.imgur.com/qCP1F9T.png" alt="示例预测结果" width="600">
 </div>
 
 ## ✨ 功能特点
@@ -326,6 +326,4 @@ ai_model_tester/
 
 ## 联系方式
 
-项目维护者 - 您的姓名 - your.email@example.com
-
-项目链接: [https://github.com/yourusername/ai_model_tester](https://github.com/yourusername/ai_model_tester) 
+项目维护者 - LEO - lishengwei0826@gmail.com

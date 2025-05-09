@@ -29,7 +29,9 @@ def load_class_names(file_path='data/imagenet_classes.txt'):
             return [line.strip() for line in f.readlines()]
     except FileNotFoundError:
         print(f"警告: 类别名称文件不存在: {file_path}")
-        return None
+        print("将使用编号代替类别名称")
+        # 返回1000个空类别名，让可视化继续进行
+        return [f"类别 {i}" for i in range(1000)]
 
 def visualize_prediction(image_path, output_dir='results', top_k=5):
     """
@@ -41,7 +43,7 @@ def visualize_prediction(image_path, output_dir='results', top_k=5):
         top_k: 显示的top-k预测结果数量
     """
     # 确保输出目录存在
-    Path(output_dir).mkdir(exist_ok=True)
+    Path(output_dir).mkdir(exist_ok=True, parents=True)
     
     # 加载图像
     try:
